@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Override Monospace Fonts",
+  "version": "0.0.1",
+  "description": "Resets all monospace fonts to browser default one.",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "override-monospace-fonts.js"
+      ]
+    }
+  ]
+}
